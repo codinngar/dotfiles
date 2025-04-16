@@ -1,0 +1,14 @@
+[
+    {
+        "label": "Run C++",
+        "command": "g++ *.cpp -o app && ./app"
+    },
+    {
+        "label": "Run Java",
+        "command": "mkdir -p target && javac -d target *.java && java -cp target Main"
+    },
+    {
+        "label": "Run",
+        "command": "bash ~/.config/zed/scripts/run.sh"
+    }
+]

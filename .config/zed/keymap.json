@@ -1,0 +1,63 @@
+[
+    {
+        "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+        "bindings": {
+            // Run code
+            // "m c": ["task::Spawn", { "task_name": "Run C++" }],
+            // "m j": ["task::Spawn", { "task_name": "Run Java" }],
+            "m m": ["task::Spawn", { "task_name": "Run" }],
+            // Window movement bindings
+            "ctrl-h": "workspace::ActivatePaneLeft",
+            "ctrl-l": "workspace::ActivatePaneRight",
+            "ctrl-k": "workspace::ActivatePaneUp",
+            "ctrl-j": "workspace::ActivatePaneDown",
+            // LSP
+            "space c a": "editor::ToggleCodeActions",
+            "space r n": "editor::Rename",
+            // "g d": "editor::GoToDefinition",
+            // "g D": "editor::GoToDefinitionSplit",
+            // "g i": "editor::GoToImplementation",
+            // "g I": "editor::GoToImplementationSplit",
+            // "g t": "editor::GoToTypeDefinition",
+            // "g T": "editor::GoToTypeDefinitionSplit",
+            // "g r": "editor::FindAllReferences",
+            // Git
+            "space g i": "git::Init",
+            "space g a": "git::Add",
+            "space g c": "git::Commit",
+            "space g p": "git::Push",
+            "space g b": "git::Branch",
+            "space g d": "git::Diff",
+            // Diagnostic
+            "> d": "editor::GoToDiagnostic",
+            "< d": "editor::GoToPreviousDiagnostic",
+            // Symbol search
+            "s s": "outline::Toggle",
+            "s S": "project_symbols::Toggle",
+            // Diagnostic
+            "space x": "diagnostics::Deploy",
+            // Switch between buffers
+            "shift-h": "pane::ActivatePreviousItem",
+            "shift-l": "pane::ActivateNextItem",
+            // Close active panel
+            "ctrl-w": "pane::CloseActiveItem",
+            // Close other items
+            "ctrl-q": "pane::CloseInactiveItems",
+            // Format file
+            "space w": "editor::Format",
+            // File finder
+            "space f f": "file_finder::Toggle"
+        }
+    },
+    {
+        "context": "ProjectPanel && not_editing",
+        "bindings": {
+            "x": "project_panel::Cut",
+            "c": "project_panel::Copy",
+            "p": "project_panel::Paste",
+            "r": "project_panel::Rename",
+            "d": "project_panel::Delete",
+            "a": "project_panel::NewFile"
+        }
+    }
+]
