@@ -1,0 +1,46 @@
+{
+  "workbench.startupEditor": "none",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "editor.fontSize": 20,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 18,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "redhat.telemetry.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.statusBar.visible": false,
+  "java.debug.settings.enableRunDebugCodeLens": false,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    // Exit insert mode
+    {
+      "before": ["j", "k"],
+      "after": ["<esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    // Toggle file explorer
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    // Close current tab
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    }
+  ],
+  "java.inlayHints.parameterNames.enabled": "none",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.printWidth": 1000,
+  "prettier.tabWidth": 4
+}
